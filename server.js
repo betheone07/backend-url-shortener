@@ -105,6 +105,9 @@ app.post('/url/shorten', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+    res.send('<h1>Hello Server Started!</h1>')
+})
 
 
 
@@ -167,11 +170,10 @@ app.post('/api/login',(req,res) => {
 
 
 
+ app.listen(process.env.PORT || 3000);
 
 
 
-const PORT = 3000;
 
-app.listen(PORT);
 
 
